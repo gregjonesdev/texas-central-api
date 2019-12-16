@@ -9,6 +9,10 @@
   */
 const seed = (data) => {
   console.log('seed()')
+  console.log("stations: ")
+  console.log(data.stations)
+
+  console.log("coordinates:")
   console.log(data.coordinates)
 }
 

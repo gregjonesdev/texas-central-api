@@ -9,8 +9,8 @@
         "street_suffix": "Rd",
         "city": "Houston",
         "state": "TX",
-        "zip": "77092",
-      },
+        "zip": "77092"
+      }
     },
     {
       "code": "BVL",
@@ -21,9 +21,9 @@
         "street_suffix": "",
         "city": "Roans Prairie",
         "state": "TX",
-        "zip": "77875",
-      },
-    }.
+        "zip": "77875"
+      }
+    },
     {
       "code": "DAL",
       "name": "Dallas",
@@ -33,8 +33,8 @@
         "street_suffix": "St",
         "city": "Dallas",
         "state": "TX",
-        "zip": "75215",
-      },
+        "zip": "75215"
+      }
     }
   ],
   "coordinates": [
