@@ -14,11 +14,12 @@ main () {
       ;;
   esac
 
-  $echo "woah"
   $SEQUELIZE $PARAMS
   echo $?
   return a
 }
 
+# Change directory to service root
+cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/../"
 
 main $@
