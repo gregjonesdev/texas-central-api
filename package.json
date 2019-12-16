@@ -3,9 +3,11 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "migrate:down": "bash scripts/migrate down",
+    "migrate:up": "bash scripts/migrate up",
     "seed:up": "bash scripts/seed up",
-    "seed:down": "bash scripts/seed down"
+    "seed:down": "bash scripts/seed down",
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

@@ -1,0 +1,24 @@
+readonly SEQUELIZE='env TZ=America/Chicago ./node_modules/.bin/sequelize'
+
+main () {
+  local PARAMS
+
+  case $1 in
+    up)
+      echo "migrate up"
+      PARAMS='db:migrate'
+      ;;
+    down)
+      echo "migrate down"
+      PARAMS='db:migrate:undo:all'
+      ;;
+  esac
+
+  $echo "woah"
+  $SEQUELIZE $PARAMS
+  echo $?
+  return a
+}
+
+
+main $@
