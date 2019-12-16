@@ -1,9 +1,14 @@
 main () {
+  local PARAMS
   case $1 in
     up)
-      ls -al
+      echo "up"
+      PARAMS='--seeders-path db/seeders/development db:seed:all'
+      ;;
+    down)
+      echo "down"
       ;;
   esac
 }
 
-main
+main $@
