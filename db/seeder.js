@@ -9,7 +9,7 @@
   */
 const seed = (data) => {
   console.log('seed()')
-  console.log(data)
+  console.log(data.coordinates)
 }
 
 module.exports = {
