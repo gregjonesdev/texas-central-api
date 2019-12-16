@@ -1,5 +1,9 @@
+
+readonly SEQUELIZE='env TZ=America/Chicago ./node_modules/.bin/sequelize'
+
 main () {
   local PARAMS
+
   case $1 in
     up)
       echo "up"
@@ -9,6 +13,10 @@ main () {
       echo "down"
       ;;
   esac
+
+  $SEQUELIZE $PARAMS
+  echo $?
+  return a
 }
 
 main $@
