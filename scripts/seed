@@ -1,5 +1,9 @@
-cd ..
+main () {
+  case $1 in
+    up)
+      ls -al
+      ;;
+  esac
+}
 
-ls
-
-pwd
+main
