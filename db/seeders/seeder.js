@@ -11,10 +11,11 @@
   */
 const seed = async (data) => {
   console.log('seed()')
-  console.log("stations: ")
-  console.log(data.stations)
-  console.log("coordinates:")
-  console.log(data.coordinates)
+  console.log(db)
+  // console.log("stations: ")
+  // console.log(data.stations)
+  // console.log("coordinates:")
+  // console.log(data.coordinates)
   /**
   * Service Levels
   **/

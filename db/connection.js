@@ -2,10 +2,10 @@
  * Create database connection.
  */
 
-const config = require('../config');
+const config = require('../config/config.json');
 const Sequelize = require('sequelize');
-
 const Op = Sequelize.Op;
+
 const operatorsAliases = {
   $eq: Op.eq,
   $ne: Op.ne,
@@ -43,22 +43,24 @@ const operatorsAliases = {
   $col: Op.col,
 };
 
-const options = {
-  dialect: config.database.dialect,
-  dialectOptions: {
-    ssl: config.database.ssl,
-  },
-  host: config.database.host,
-  pool: {
-    idle: 10000,
-    max: 5,
-    min: 0,
-  },
-  logging: config.database.logging,
-  operatorsAliases,
-  port: config.database.port,
-  ssl: config.database.ssl,
-};
+// const options = {
+//   dialect: config.database.dialect,
+//   dialectOptions: {
+//     ssl: config.database.ssl,
+//   },
+//   host: config.database.host,
+//   pool: {
+//     idle: 10000,
+//     max: 5,
+//     min: 0,
+//   },
+//   logging: config.database.logging,
+//   operatorsAliases,
+//   port: config.database.port,
+//   ssl: config.database.ssl,
+// };
 
 
-module.exports = new Sequelize(config.database.database, config.database.username, config.database.password, options);
+// module.exports = new Sequelize(config.database.database, config.database.username, config.database.password, options);
+
+module.exports = {red: "hi"}
