@@ -43,24 +43,22 @@ const operatorsAliases = {
   $col: Op.col,
 };
 
-// const options = {
-//   dialect: config.database.dialect,
-//   dialectOptions: {
-//     ssl: config.database.ssl,
-//   },
-//   host: config.database.host,
-//   pool: {
-//     idle: 10000,
-//     max: 5,
-//     min: 0,
-//   },
-//   logging: config.database.logging,
-//   operatorsAliases,
-//   port: config.database.port,
-//   ssl: config.database.ssl,
-// };
+const options = {
+  dialect: config.development.dialect,
+  dialectOptions: {
+    ssl: config.development.ssl,
+  },
+  host: config.development.host,
+  pool: {
+    idle: 10000,
+    max: 5,
+    min: 0,
+  },
+  logging: config.development.logging,
+  operatorsAliases,
+  port: config.development.port,
+  ssl: config.development.ssl,
+};
 
 
-// module.exports = new Sequelize(config.database.database, config.database.username, config.database.password, options);
-
-module.exports = {red: "hi"}
+module.exports = new Sequelize(config.development.database, config.development.username, config.development.password, options);
