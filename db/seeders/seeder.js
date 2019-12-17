@@ -2,7 +2,7 @@
  * Load and process seed data.
  */
  const db = require('../connection');
- // const models = require('../models');
+ const models = require('../models');
  const Promise = require('bluebird');
 
  /**
@@ -28,6 +28,7 @@ const seed = async (data) => {
       // console.log(peak_minutes)
       // console.log(offpeak_minutes)
       console.log('current hot spot...')
+      console.log(models)
 
     } catch(error) {
       console.log('error 29')
