@@ -18,5 +18,5 @@ Before starting the server, run migrations to create tables.  You can also seed 
 
 ```
 npm run migrate:up
-npm run seed:dev
+npm run seed:up
 `
