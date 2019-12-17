@@ -1,7 +1,7 @@
 /**
  * Load and process seed data.
  */
-
+ const db = require('../connection');
  const Promise = require('bluebird');
 
  /**

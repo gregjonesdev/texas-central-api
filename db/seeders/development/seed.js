@@ -2,8 +2,8 @@
 * Seed new development database.
 */
 
-const data = require('../../data/data.json');
-const seeder = require('../../seeder');
+const data = require('../data/data.json');
+const seeder = require('../seeder');
 
 
 
