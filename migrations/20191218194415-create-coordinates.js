@@ -1,21 +1,15 @@
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('ServiceIntervals', {
+    return queryInterface.createTable('coordinates', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      operating_level: {
-        type: Sequelize.STRING
-      },
-      peak_minutes: {
-        type: Sequelize.NUMBER
-      },
-      offpeak_minutes: {
-        type: Sequelize.NUMBER
+      latitude: {
+        type: Sequelize.FLOAT
       },
       createdAt: {
         allowNull: false,
@@ -28,6 +22,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('ServiceIntervals');
+    return queryInterface.dropTable('coordinates');
   }
 };
