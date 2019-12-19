@@ -55,7 +55,7 @@
     }
   ],
   "coordinates": [
-    {"longitude": -95.4555147, "latitude": 29.7991492, "name": "HOU"},
+    {"longitude": -95.4555147, "latitude": 29.7991492},
     {"longitude": -95.6962, "latitude": 29.967522},
     {"longitude": -95.723585, "latitude": 29.978274},
     {"longitude": -95.776762, "latitude": 29.984923},
@@ -72,7 +72,7 @@
     {"longitude": -95.944621, "latitude": 30.544052},
     {"longitude": -95.9546223, "latitude": 30.6011488},
     {"longitude": -95.967533, "latitude": 30.662603},
-    {"longitude": -95.976392, "latitude": 30.687732, "name": "BVL"},
+    {"longitude": -95.976392, "latitude": 30.687732},
     {"longitude": -96.025209, "latitude": 30.896825},
     {"longitude": -96.027609, "latitude": 30.918115},
     {"longitude": -96.063731, "latitude": 31.074958},
@@ -167,6 +167,6 @@
     {"longitude": -96.7930153, "latitude": 32.7618153},
     {"longitude": -96.797342, "latitude": 32.764149},
     {"longitude": -96.797998, "latitude": 32.764597},
-    {"longitude": -96.7984762, "latitude": 32.7650497, "name": "DAL"}
+    {"longitude": -96.7984762, "latitude": 32.7650497}
   ]
 }
