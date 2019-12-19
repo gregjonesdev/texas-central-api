@@ -17,20 +17,32 @@ const seed = async (data) => {
   // console.log(data.stations)
   // console.log("coordinates:")
   // console.log(data.coordinates)
+  await Promise.map(data.coordinates, coordinate => new Promise(async (resolve, reject) => {
+    try {
+      const { latitude, longitude } = coordinate;
+      // console.log('checkpoint')
+      // console.log(name)
+      // console.log(peak_minutes)
+      // console.log(offpeak_minutes)
+      console.log('WHAT UP')
+      console.log(models.coordinates)
+      console.log(latitude)
+      models.coordinates.create({
+        latitude,
+        longitude
+      })  
+
+    } catch(error) {
+      console.log('error 29')
+    }
+  }))
+
   /**
   * Service Levels
   **/
   await Promise.map(data.service_levels, service_level => new Promise(async (resolve, reject) => {
     try {
       const { name, peak_minutes, offpeak_minutes } = service_level;
-      // console.log('checkpoint')
-      // console.log(name)
-      // console.log(peak_minutes)
-      // console.log(offpeak_minutes)
-      console.log('current hot spot...')
-      console.log(models.coordinates)
-      console.log(models.service_interval)
-
     } catch(error) {
       console.log('error 29')
     }
